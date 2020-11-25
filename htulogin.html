@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logIn</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        
+        .cont{
+            padding-top: 50px;
+        }
+        form{
+           
+            width:100%;
+            height: 500px;
+            background-color: orangered;
+            border-radius: 15px;
+            padding:2px 20px;
+            filter: drop-shadow(0 1px 10px dimgray);
+            margin:auto ;
+        }
+        .welcome{
+            font-size: 25px;
+            color:whitesmoke;
+            padding:7px 0;
+        }
+        .welcome::first-letter{
+            font-size: 30px;
+            text-transform: capitalize;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(221, 218, 218);
+        }
+        a:hover{
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        .color{
+            background-color: orangered;
+            border: none;
+            outline: none;
+        }
+        .link{
+            color:whitesmoke;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            padding:0;
+            margin:0;
+            transition: color .3s ease-in-out;
+        }
+        .link:hover{
+            color:rgb(172, 168, 168);
+            background-color:transparent;
+            border: none;
+        }
+    </style>
+</head>
+<body>    
+
+    <div class="container cont">
+    <div class="row">
+       
+            <form class="col-12 col-md-6">
+               
+                <div class="welcome lead text-center pt-5">
+                    welcom to the login page
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-light ">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1"> Agree on our
+                
+                                <!-- Button trigger modal -->
+                <a class=" btn-primary link" data-toggle="modal" data-target="#exampleModal">
+                     terms and conditions
+                </a>
+                
+                <!-- Modal -->
+               
+                </label>
+                </div>
+                <button type="submit" class="btn btn-primary bg-light border-light text-dark">sign in</button>
+                <button type="submit" class="btn btn-primary bg-danger border-danger">cancel</button>
+              </form>
+       
+    </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Agreement</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <p>content to scroll</p>
+                <p>content to scroll</p>
+                <p>content to scroll</p>
+                <p>content to scroll</p>
+                <p>content to scroll</p>
+                <p>content to scroll</p>
+                <p>content to scroll</p>
+                <p>content to scroll</p>
+                <p>content to scroll</p>
+                <p>content to scroll</p>
+                <p>content to scroll</p>
+                <p>content to scroll</p>
+                <p>content to scroll</p>
+                <p>content to scroll</p>
+                <p>content to scroll</p>
+                <p>content to scroll</p>
+                <p>content to scroll</p>
+                <p>content to scroll</p>
+                <p>content to scroll</p>
+                <p>content to scroll</p>
+                <p>content to scroll</p>
+                <p>content to scroll</p>
+                <p>content to scroll</p>
+                <p>content to scroll</p>
+                <p>content to scroll</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary color" data-dismiss="modal">Close</button>
+           
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
